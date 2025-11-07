@@ -44,6 +44,9 @@ export default function QuickActions() {
       {actions.map((action) => (
         <Card key={action.id} padding="md" shadow="lg" className="hover:shadow-xl transition-all duration-200 cursor-pointer active:scale-95" onClick={() => {
           if (action.id === 'book-repair') navigate('/repair/book');
+          if (action.id === 'track-order') navigate('/orders/track');
+          if (action.id === 'buy-phone') navigate('/market');
+          if (action.id === 'sell-phone') navigate('/auth');
         }}>
           <div className="flex flex-col items-center text-center">
             <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${action.gradient} flex items-center justify-center mb-3 overflow-hidden`}>

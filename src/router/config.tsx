@@ -8,6 +8,8 @@ import Auth from "../pages/auth/page";
 import BookRepairPage from "../pages/repair/book";
 import ServicesPage from "../pages/services/page";
 import MarketPage from "../pages/market/page";
+import TrackOrderPage from "../pages/orders/track";
+import ProfilePage from "../pages/profile/page";
 
 const routes: RouteObject[] = [
   {
@@ -27,8 +29,16 @@ const routes: RouteObject[] = [
     element: <MarketPage />,
   },
   {
+    path: "/profile",
+    element: <ProfilePage />,
+  },
+  {
     path: "/repair/book",
     element: <BookRepairPage />,
+  },
+  {
+    path: "/orders/track",
+    element: <TrackOrderPage />,
   },
   {
     path: "/manager",
